@@ -1,0 +1,22 @@
+objetivo: ***CRUD***
+
+Criar um API REstFull para controle de produto - ***CRUD***
+
+1- Modelo: Ok 
+ - Onde criamos os atributos dos objetos
+   {Produto: id, nome, quantidade, valor, observação}
+
+2- Repositório de usuário: OK
+ - Comunica com banco de dados ou simula um banco
+   {obterTodos, obterPorID, adicionar, atualizar, deletar}
+
+3- Serviço de produto: OK
+- É quem vai usar o repositório - Precisa ter as mesmas coisas que o repo
+sitório. É ele quem pede ao Repositório para resolver. Porém ele pode 
+Ter regras de negócio ou não
+      {obterTodos, obterPorID, adicionar, atualizar, deletar}
+
+4- Controller de produto: OK
+- Vai ser a classe principal, "nosso endpoint". ele que vai trabalhar com todos 
+os serviços. Ele que recebe as requisições e chama todos os serviços
+      obterTodos, obterPorID, adicionar, atualizar, deletar}
